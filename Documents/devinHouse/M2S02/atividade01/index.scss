@@ -1,0 +1,36 @@
+@mixin alinhamento {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin paragrafo {
+    color: white;
+    font-size: 11px
+}
+
+body {
+    background-color: grey;
+    color: red
+}
+
+.container {
+    @include alinhamento;
+    .container2 {
+        @include alinhamento;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 15px;
+        color: rgb(238, 44, 44);
+        .cards {
+            width: 400px;
+            height: 200px;
+            background-color: black;
+
+            p {
+                @include paragrafo();
+            }
+        }
+    }
+}
+

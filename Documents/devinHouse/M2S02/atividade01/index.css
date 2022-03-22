@@ -1,0 +1,30 @@
+body {
+  background-color: grey;
+  color: red;
+}
+
+.container {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.container .container2 {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 15px;
+  color: #ee2c2c;
+}
+.container .container2 .cards {
+  width: 400px;
+  height: 200px;
+  background-color: black;
+}
+.container .container2 .cards p {
+  color: white;
+  font-size: 11px;
+}
+
+/*# sourceMappingURL=index.css.map */
